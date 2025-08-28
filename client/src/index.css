@@ -16,6 +16,9 @@
   --muted-foreground: hsl(0, 0%, 63%);
   --accent: hsl(142, 78%, 46%);
   --accent-foreground: hsl(0, 0%, 0%);
+  --brazil-green: hsl(142, 78%, 46%);
+  --brazil-yellow: hsl(51, 100%, 50%);
+  --brazil-blue: hsl(220, 80%, 25%);
   --border: hsl(0, 0%, 20%);
   --input: hsl(0, 0%, 14%);
   --ring: hsl(142, 78%, 46%);
@@ -202,6 +205,21 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(142, 78%, 46%);
+}
+
+/* Brazil Colors Accents */
+.brazil-gradient {
+  background: linear-gradient(135deg, var(--brazil-green) 0%, var(--brazil-yellow) 50%, var(--brazil-blue) 100%);
+}
+
+.brazil-flag {
+  background: linear-gradient(to bottom, var(--brazil-green) 33%, var(--brazil-yellow) 33%, var(--brazil-yellow) 66%, var(--brazil-blue) 66%);
+}
+
+.brazil-accent {
+  border-left: 4px solid var(--brazil-green);
+  border-right: 4px solid var(--brazil-blue);
+  background: linear-gradient(90deg, transparent, var(--brazil-yellow) 50%, transparent);
 }
 
 /* WhatsApp Floating Button */

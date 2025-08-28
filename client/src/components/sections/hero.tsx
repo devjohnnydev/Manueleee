@@ -37,12 +37,6 @@ export default function Hero() {
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-8">
-            <div className="inline-flex items-center bg-card/50 backdrop-blur-sm border border-border rounded-full px-6 py-3 mb-6">
-              <Leaf className="text-primary mr-3 h-5 w-5" />
-              <span className="text-sm font-medium">Sustentabilidade • Responsabilidade • Inovação</span>
-            </div>
-          </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="gradient-text">MRX DO BRASIL</span>
@@ -52,10 +46,15 @@ export default function Hero() {
             <span className="typing-text font-medium">{typingText}</span>
           </div>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto leading-relaxed">
             Desde 1990, lideramos a <strong className="text-primary">logística reversa</strong> de equipamentos eletrônicos no Brasil. 
             Fundada por Emanuel com a missão de <strong className="text-primary">preservar o planeta</strong> através da reciclagem responsável.
           </p>
+          
+          <div className="inline-flex items-center bg-card/50 backdrop-blur-sm border border-border rounded-full px-6 py-3 mb-8">
+            <Leaf className="text-primary mr-3 h-5 w-5" />
+            <span className="text-lg font-medium text-foreground">Sustentabilidade, Responsabilidade e Inovação em cada processo</span>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

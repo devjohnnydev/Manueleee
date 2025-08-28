@@ -17,18 +17,24 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center font-bold text-xl text-primary-foreground">
-                  MRX
-                </div>
+                <img 
+                  src="/attached_assets/logo_1756381267147.png" 
+                  alt="MRX DO BRASIL" 
+                  className="h-12 w-auto"
+                  data-testid="footer-logo"
+                />
                 <div>
                   <h3 className="text-xl font-bold">MRX DO BRASIL</h3>
                   <p className="text-sm text-muted-foreground">Reciclagem Sustentável</p>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-4 leading-relaxed">
                 Desde 1990, lideramos a logística reversa de resíduos eletrônicos no Brasil. 
                 Fundada por Emanuel com a missão de preservar o planeta através da reciclagem responsável.
               </p>
+              <div className="inline-flex items-center bg-card/50 backdrop-blur-sm border border-border rounded-full px-4 py-2 mb-6">
+                <span className="text-sm font-medium">Sustentabilidade, Responsabilidade e Inovação em cada processo</span>
+              </div>
               <div className="flex space-x-4">
                 <a 
                   href="https://wa.me/5511940326215" 
@@ -91,16 +97,27 @@ export default function Footer() {
           </div>
           
           {/* Bottom Footer */}
-          <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground mb-4 md:mb-0">
-              © 2024 MRX DO BRASIL. Todos os direitos reservados.
-            </p>
-            <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-              <span>Fundada em 1990 por Emanuel</span>
-              <span>•</span>
-              <span>34+ anos de experiência</span>
-              <span>•</span>
-              <span>Reciclagem 100% sustentável</span>
+          <div className="border-t border-border pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+              <div className="text-muted-foreground mb-4 md:mb-0 flex items-center">
+                <span>© 2024 MRX DO BRASIL. Todos os direitos reservados.</span>
+                <div className="ml-4 flex items-center">
+                  <span className="text-xs mr-2">Orgulhosamente brasileiro</span>
+                  <div className="w-8 h-6 brazil-flag rounded-sm border"></div>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                <span>Fundada em 1990 por Emanuel</span>
+                <span>•</span>
+                <span>34+ anos de experiência</span>
+                <span>•</span>
+                <span>Reciclagem 100% sustentável</span>
+              </div>
+            </div>
+            <div className="text-center">
+              <div className="inline-block brazil-accent px-6 py-2 rounded-lg">
+                <span className="text-sm font-medium">🇧🇷 Líder em Reciclagem de Resíduos Eletrônicos no Brasil 🇧🇷</span>
+              </div>
             </div>
           </div>
         </div>

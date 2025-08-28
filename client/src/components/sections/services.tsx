@@ -1,37 +1,51 @@
-import { Truck, Shield, Recycle, Tag, MapPin, Headphones, ArrowRight } from "lucide-react";
+import { Truck, Shield, Recycle, Tag, MapPin, Headphones, ArrowRight, Info } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 export default function Services() {
   const services = [
     {
       icon: Truck,
       title: "Coleta Especializada",
-      description: "Coleta programada de equipamentos eletrônicos em sua empresa com toda segurança e rastreabilidade"
+      description: "Coleta programada de equipamentos eletrônicos em sua empresa com toda segurança e rastreabilidade",
+      details: "Realizamos a coleta especializada de resíduos eletrônicos com otimização da cadeia de transporte. Nosso processo inclui agendamento flexível, equipe treinada e rastreabilidade completa desde a coleta até o destino final. Atendemos computadores, notebooks, celulares, impressoras, servidores e todos os tipos de equipamentos eletrônicos.",
+      stats: "1000+ empresas atendidas"
     },
     {
       icon: Shield,
       title: "Descaracterização Segura",
-      description: "Destruição completa de dados e descaracterização física de equipamentos com certificado"
+      description: "Destruição completa de dados e descaracterização física de equipamentos com certificado",
+      details: "Utilizamos trituradores Shredder para garantir a destruição total de dados e a descaracterização física dos equipamentos. O processo inclui separação de telas e baterias, trituração em pequenos pedaços e certificação de destruição de dados. Fornecemos certificados de destruição para compliance.",
+      stats: "100% segurança de dados"
     },
     {
       icon: Recycle,
       title: "Reciclagem Sustentável",
-      description: "Processo completo de reciclagem seguindo normas ambientais e certificações internacionais"
+      description: "Processo completo de reciclagem seguindo normas ambientais e certificações internacionais",
+      details: "Nosso processo de reciclagem segue as melhores práticas ambientais. Realizamos armazenagem correta, separação criteriosa, classificação de materiais nocivos e reciclagem 100% sustentável. Os materiais são transformados em matéria-prima para novos produtos, contribuindo para a economia circular.",
+      stats: "17,4% taxa global de reciclagem"
     },
     {
       icon: Tag,
       title: "Certificação Completa",
-      description: "Documentação completa para compliance ambiental da sua empresa"
+      description: "Documentação completa para compliance ambiental da sua empresa",
+      details: "Fornecemos toda a documentação necessária para compliance ambiental, incluindo certificados de destinação, licenças ambientais, política de gestão e relatórios detalhados. Mais de 10 anos de experiência garantem credibilidade técnica e conform completa com órgãos reguladores.",
+      stats: "Certificações essenciais"
     },
     {
       icon: MapPin,
       title: "Cobertura Nacional",
-      description: "Atendemos todo território nacional com parceiros certificados"
+      description: "Atendemos todo território nacional com parceiros certificados",
+      details: "Com sede estratégica em São Paulo e rede de parceiros certificados, atendemos todo o Brasil. Nossa logística reversa é otimizada para atender desde pequenas empresas até grandes corporações. O Brasil produz 1,2 milhões de toneladas de lixo eletrônico anualmente, e apenas 3% é reciclado corretamente.",
+      stats: "Cobertura nacional"
     },
     {
       icon: Headphones,
       title: "Suporte Especializado",
-      description: "Equipe técnica especializada para orientações e suporte completo"
+      description: "Equipe técnica especializada para orientações e suporte completo",
+      details: "Nossa equipe conta com mais de 34 anos de experiência em gerenciamento de resíduos eletrônicos. Oferecemos consultoria especializada, treinamentos, suporte técnico e acompanhamento de todo o processo. Tecnologia de ponta e processos otimizados garantem máxima eficiência e resultados superiores.",
+      stats: "34+ anos experiência"
     }
   ];
 
@@ -59,10 +73,46 @@ export default function Services() {
                   <p className="text-muted-foreground mb-6">
                     {service.description}
                   </p>
-                  <div className="flex items-center text-primary font-medium cursor-pointer hover:text-accent transition-colors">
-                    <span>Saiba mais</span>
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </div>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="ghost" className="p-0 h-auto font-medium text-primary hover:text-accent transition-colors">
+                        <span>Saiba mais</span>
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl">
+                      <DialogHeader>
+                        <DialogTitle className="flex items-center mb-4">
+                          <service.icon className="text-primary h-6 w-6 mr-3" />
+                          {service.title}
+                        </DialogTitle>
+                      </DialogHeader>
+                      <DialogDescription asChild>
+                        <div>
+                          <p className="text-muted-foreground mb-6 leading-relaxed">
+                            {service.details}
+                          </p>
+                          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-4">
+                            <div className="flex items-center">
+                              <Info className="text-primary h-5 w-5 mr-2" />
+                              <span className="font-semibold text-primary">{service.stats}</span>
+                            </div>
+                          </div>
+                          <div className="flex gap-4">
+                            <Button 
+                              onClick={() => window.open('https://wa.me/5511940326215', '_blank')}
+                              className="bg-primary text-primary-foreground hover:bg-accent"
+                            >
+                              Solicitar Orçamento
+                            </Button>
+                            <Button variant="outline">
+                              Falar com Especialista
+                            </Button>
+                          </div>
+                        </div>
+                      </DialogDescription>
+                    </DialogContent>
+                  </Dialog>
                 </CardContent>
               </Card>
             </div>
