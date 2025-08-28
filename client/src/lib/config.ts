@@ -10,5 +10,6 @@ export const config = {
 };
 
 export const getAssetUrl = (path: string) => {
-  return `${config.assets.basePath}/${path}`;
+  // For Vercel deployment, assets are served from /assets/
+  return `/assets/${path}`;
 };
