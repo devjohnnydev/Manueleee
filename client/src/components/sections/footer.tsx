@@ -1,4 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
+import { getAssetUrl } from "@/lib/config";
 
 export default function Footer() {
   const services = [
@@ -18,7 +19,7 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/attached_assets/logo_1756386223432.png" 
+                  src={getAssetUrl("logo_1756386223432.png")} 
                   alt="MRX DO BRASIL" 
                   className="h-12 w-auto"
                   data-testid="footer-logo"

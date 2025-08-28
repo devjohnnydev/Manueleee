@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getAssetUrl } from "@/lib/config";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,7 +47,7 @@ export default function Navigation() {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <img 
-            src="/attached_assets/logo_1756386223432.png" 
+            src={getAssetUrl("logo_1756386223432.png")} 
             alt="MRX DO BRASIL" 
             className="h-12 w-auto"
             data-testid="header-logo"
