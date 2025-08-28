@@ -40,10 +40,9 @@ export default function Navigation() {
   };
 
   return (
+    <>
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 header-visible ${
-        isScrolled ? 'bg-background/80 backdrop-blur-sm border-b border-border' : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-lg"
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
@@ -54,8 +53,7 @@ export default function Navigation() {
             data-testid="header-logo"
           />
           <div>
-            <h1 className="text-xl font-bold text-foreground">MRX DO BRASIL</h1>
-            <p className="text-sm text-muted-foreground">Reciclagem Sustentável</p>
+            <p className="text-sm text-muted-foreground">Reciclagem Sustentável desde 1990</p>
           </div>
         </div>
         
@@ -165,5 +163,13 @@ export default function Navigation() {
         </div>
       )}
     </header>
+    
+    {/* Company Name Below Header */}
+    <div className="fixed top-20 left-0 right-0 z-40 bg-background/90 backdrop-blur-sm border-b border-border/50">
+      <div className="container mx-auto px-4 py-3 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold gradient-text">MRX DO BRASIL</h1>
+      </div>
+    </div>
+    </>
   );
 }

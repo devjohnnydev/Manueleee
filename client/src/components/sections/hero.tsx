@@ -29,7 +29,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center hex-pattern overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center hex-pattern overflow-hidden pt-32">
       <div className="absolute inset-0 bg-gradient-to-br from-background/90 to-background/70"></div>
       
       {/* Interactive Particles */}
@@ -38,9 +38,6 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">MRX DO BRASIL</span>
-          </h1>
           
           <div className="text-2xl md:text-3xl mb-8 h-16 flex items-center justify-center">
             <span className="typing-text font-medium">{typingText}</span>
