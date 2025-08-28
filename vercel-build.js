@@ -12,7 +12,7 @@ try {
   
   // Build only the frontend for static deployment
   console.log('📦 Building frontend with Vite...');
-  execSync('npx vite build --mode production', { 
+  execSync('npx vite build --config vite.config.production.ts --mode production', { 
     stdio: 'inherit', 
     cwd: process.cwd(),
     env: { ...process.env, NODE_ENV: 'production' }
@@ -41,8 +41,13 @@ try {
     });
   }
   
+  // Create _redirects file for SPA routing
+  const redirectsContent = '/*    /index.html   200';
+  fs.writeFileSync(path.join(process.cwd(), 'dist/public/_redirects'), redirectsContent);
+  
   console.log('✅ Vercel build completed successfully!');
 } catch (error) {
   console.error('❌ Build failed:', error.message);
+  console.error('Stack trace:', error.stack);
   process.exit(1);
 }

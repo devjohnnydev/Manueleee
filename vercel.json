@@ -1,4 +1,6 @@
 {
-  "buildCommand": "node build-vercel-inline.js",
-  "outputDirectory": "dist/public"
+  "buildCommand": "node vercel-build.js",
+  "outputDirectory": "dist/public",
+  "framework": null,
+  "installCommand": "npm install"
 }
