@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node vercel-build-ultimate.js",
+  "buildCommand": "node vercel-build-base64.js",
   "outputDirectory": "dist/public",
   "framework": null,
   "installCommand": "npm install",
