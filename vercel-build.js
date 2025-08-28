@@ -10,15 +10,13 @@ try {
   // Set production environment
   process.env.NODE_ENV = 'production';
   
-  // Install dependencies first if node_modules doesn't exist
-  if (!fs.existsSync('node_modules')) {
-    console.log('📦 Installing dependencies...');
-    execSync('npm install', { stdio: 'inherit', cwd: process.cwd() });
-  }
-  
-  // Build the Vite project
+  // Build only the frontend for static deployment
   console.log('📦 Building frontend with Vite...');
-  execSync('npx vite build', { stdio: 'inherit', cwd: process.cwd() });
+  execSync('npx vite build --mode production', { 
+    stdio: 'inherit', 
+    cwd: process.cwd(),
+    env: { ...process.env, NODE_ENV: 'production' }
+  });
   
   // Copy attached_assets to dist/public/assets for static serving
   const srcAssets = path.join(process.cwd(), 'attached_assets');
@@ -32,16 +30,18 @@ try {
     // Copy all files from attached_assets to dist/assets
     const files = fs.readdirSync(srcAssets);
     files.forEach(file => {
-      const srcFile = path.join(srcAssets, file);
-      const destFile = path.join(destAssets, file);
-      fs.copyFileSync(srcFile, destFile);
-      console.log(`✅ Copied ${file}`);
+      if (!file.startsWith('.')) { // Skip hidden files
+        const srcFile = path.join(srcAssets, file);
+        const destFile = path.join(destAssets, file);
+        if (fs.lstatSync(srcFile).isFile()) {
+          fs.copyFileSync(srcFile, destFile);
+          console.log(`✅ Copied ${file}`);
+        }
+      }
     });
   }
   
-  console.log('✅ Build completed successfully!');
-  console.log('📁 Files in dist:', fs.readdirSync('dist'));
-  console.log('📁 Files in dist/assets:', fs.existsSync('dist/assets') ? fs.readdirSync('dist/assets') : 'No assets directory');
+  console.log('✅ Vercel build completed successfully!');
 } catch (error) {
   console.error('❌ Build failed:', error.message);
   process.exit(1);
