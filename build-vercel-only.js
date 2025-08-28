@@ -40,6 +40,19 @@ try {
     });
   }
   
+  // Create _headers file in output directory
+  const headersContent = `/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Content-Type: text/css
+
+/*.js
+  Content-Type: application/javascript`;
+  
+  fs.writeFileSync(path.join(process.cwd(), 'dist/public/_headers'), headersContent);
+  console.log('✅ Created _headers file for Vercel');
+  
   console.log('✅ Frontend-only build completed for Vercel!');
 } catch (error) {
   console.error('❌ Build failed:', error.message);
