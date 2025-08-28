@@ -5,3 +5,11 @@ shared
 .env*
 .replit
 .git
+.local
+.cache
+.upm
+.vite
+drizzle.config.ts
+tsconfig.json
+tailwind.config.ts
+postcss.config.js
