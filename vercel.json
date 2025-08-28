@@ -1,21 +1,10 @@
 {
-  "version": 2,
   "buildCommand": "node build-vercel-only.js",
   "outputDirectory": "dist/public",
-  "installCommand": "npm install",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "/attached_assets/(.*)",
-      "dest": "/attached_assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!assets/).*)",
+      "destination": "/index.html"
     }
-  ],
-  "framework": null
+  ]
 }
