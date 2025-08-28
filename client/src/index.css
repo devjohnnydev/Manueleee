@@ -37,14 +37,13 @@
   }
 }
 
-/* Hexagonal Background Pattern */
+/* Hexagonal Background Pattern - Honeycomb Texture */
 .hex-pattern {
-  background-image: 
-    radial-gradient(circle at 25px 25px, rgba(46, 204, 64, 0.1) 2px, transparent 2px),
-    radial-gradient(circle at 75px 75px, rgba(46, 204, 64, 0.05) 1px, transparent 1px);
-  background-size: 50px 50px;
-  background-position: 0 0, 25px 25px;
-  animation: hexMove 20s linear infinite;
+  background-image: url('/attached_assets/fundo_site_1756381259667.png');
+  background-size: 400px 400px;
+  background-repeat: repeat;
+  background-position: center;
+  position: relative;
 }
 
 .hex-pattern::before {
@@ -54,15 +53,30 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    linear-gradient(30deg, transparent 40%, rgba(46, 204, 64, 0.03) 50%, transparent 60%),
-    linear-gradient(150deg, transparent 40%, rgba(46, 204, 64, 0.03) 50%, transparent 60%);
-  animation: hexRotate 15s linear infinite reverse;
+  background: linear-gradient(45deg, rgba(46, 204, 64, 0.05) 0%, transparent 25%, rgba(46, 204, 64, 0.08) 50%, transparent 75%, rgba(46, 204, 64, 0.03) 100%);
+  animation: hexRotate 25s linear infinite;
 }
 
-@keyframes hexMove {
-  0% { background-position: 0 0, 25px 25px; }
-  100% { background-position: 50px 50px, 75px 75px; }
+/* Interactive Particles */
+.interactive-particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(46, 204, 64, 0.8) 0%, rgba(46, 204, 64, 0.3) 50%, transparent 100%);
+  border-radius: 50%;
+  animation: particleFloat 8s ease-in-out infinite;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.interactive-particle:hover {
+  transform: scale(1.5);
+  background: radial-gradient(circle, rgba(46, 204, 64, 1) 0%, rgba(46, 204, 64, 0.6) 50%, transparent 100%);
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  25% { transform: translateY(-30px) translateX(20px) rotate(90deg); }
+  50% { transform: translateY(-10px) translateX(-15px) rotate(180deg); }
+  75% { transform: translateY(-25px) translateX(10px) rotate(270deg); }
 }
 
 @keyframes hexRotate {

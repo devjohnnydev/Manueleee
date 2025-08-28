@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import GoogleMap from "@/components/ui/google-map";
 
 const formSchema = z.object({
   name: z.string().min(2, "Nome deve ter pelo menos 2 caracteres"),
@@ -287,7 +288,7 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                   </CardContent>
                 </Card>
                 
-                {/* Location */}
+                {/* Location & Map */}
                 <Card className="bg-card border-border">
                   <CardContent className="p-8">
                     <div className="flex items-center mb-6">
@@ -299,15 +300,14 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                         <p className="text-muted-foreground">Nossa sede</p>
                       </div>
                     </div>
-                    <p className="text-lg mb-4">CEP: 08584-030<br />São Paulo - SP</p>
-                    <Button 
-                      variant="outline" 
-                      className="bg-secondary border-border text-foreground ripple hover:bg-card transition-colors"
-                      data-testid="contact-maps-button"
-                    >
-                      <MapPin className="mr-2 h-4 w-4" />
-                      Ver no Mapa
-                    </Button>
+                    <div className="h-64 mb-4 rounded-lg overflow-hidden">
+                      <GoogleMap 
+                        center={{ lat: -23.5505, lng: -46.6333 }} 
+                        zoom={12} 
+                        className="w-full h-full"
+                      />
+                    </div>
+                    <p className="text-lg">CEP: 08584-030<br />São Paulo - SP</p>
                   </CardContent>
                 </Card>
                 

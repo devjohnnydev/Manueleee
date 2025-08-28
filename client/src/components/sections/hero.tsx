@@ -2,6 +2,7 @@ import { useTypingAnimation } from "@/hooks/use-typing-animation";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { ChevronDown, Leaf, Recycle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import InteractiveParticles from "@/components/ui/interactive-particles";
 
 export default function Hero() {
   const typingText = useTypingAnimation([
@@ -31,12 +32,8 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center hex-pattern overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background/90 to-background/70"></div>
       
-      {/* Floating Particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-2 h-2 bg-primary rounded-full top-1/4 left-1/4 floating" style={{animationDelay: '0s'}}></div>
-        <div className="absolute w-1 h-1 bg-accent rounded-full top-3/4 left-3/4 floating" style={{animationDelay: '2s'}}></div>
-        <div className="absolute w-3 h-3 bg-primary/50 rounded-full top-1/2 right-1/4 floating" style={{animationDelay: '4s'}}></div>
-      </div>
+      {/* Interactive Particles */}
+      <InteractiveParticles />
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">

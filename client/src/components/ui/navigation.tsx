@@ -47,9 +47,12 @@ export default function Navigation() {
     >
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center font-bold text-xl text-primary-foreground">
-            MRX
-          </div>
+          <img 
+            src="/attached_assets/logo_1756381267147.png" 
+            alt="MRX DO BRASIL" 
+            className="h-12 w-auto"
+            data-testid="header-logo"
+          />
           <div>
             <h1 className="text-xl font-bold text-foreground">MRX DO BRASIL</h1>
             <p className="text-sm text-muted-foreground">Reciclagem Sustentável</p>
