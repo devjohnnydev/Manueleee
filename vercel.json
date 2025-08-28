@@ -11,13 +11,13 @@
   ],
   "routes": [
     {
-      "src": "/attached_assets/(.*)",
-      "dest": "/attached_assets/$1"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "npm run build"
+  "framework": null
 }
