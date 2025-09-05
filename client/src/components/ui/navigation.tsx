@@ -40,6 +40,11 @@ export default function Navigation() {
     }
   };
 
+  const navigateToHistory = () => {
+    window.location.href = '/historia';
+    setIsMenuOpen(false);
+  };
+
   return (
     <header 
       className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-lg"
@@ -92,6 +97,13 @@ export default function Navigation() {
             data-testid="nav-contato"
           >
             Contato
+          </button>
+          <button 
+            onClick={navigateToHistory}
+            className="text-foreground hover:text-primary transition-colors"
+            data-testid="nav-historia"
+          >
+            História
           </button>
         </div>
         
@@ -158,6 +170,13 @@ export default function Navigation() {
               data-testid="mobile-nav-contato"
             >
               Contato
+            </button>
+            <button 
+              onClick={navigateToHistory}
+              className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
+              data-testid="mobile-nav-historia"
+            >
+              História
             </button>
           </div>
         </div>

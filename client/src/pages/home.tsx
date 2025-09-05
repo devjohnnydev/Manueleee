@@ -12,6 +12,76 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Services />
+      
+      {/* Seção com fundo de placas eletrônicas */}
+      <section className="relative py-20 overflow-hidden">
+        {/* Background da imagem de placas */}
+        <div 
+          className="absolute inset-0 opacity-20 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(/attached_assets/Captura_de_tela_2025-09-05_074704-removebg-preview_1757071313223.png)`
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/80"></div>
+        
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 gradient-text">Tecnologia de Ponta</h2>
+            <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+              Utilizamos equipamentos e processos tecnológicos avançados para garantir 
+              a reciclagem mais eficiente e segura de componentes eletrônicos.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-8 card-hover">
+                <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                  <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Separação Automatizada</h3>
+                <p className="text-muted-foreground">
+                  Sistemas automatizados para separação precisa de componentes e materiais valiosos.
+                </p>
+              </div>
+              
+              <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-8 card-hover">
+                <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                  <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Análise de Componentes</h3>
+                <p className="text-muted-foreground">
+                  Identificação e análise detalhada de cada componente para maximizar a recuperação.
+                </p>
+              </div>
+              
+              <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-8 card-hover">
+                <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                  <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-4">Certificação Total</h3>
+                <p className="text-muted-foreground">
+                  Processo certificado que garante rastreabilidade e conformidade ambiental.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-primary/10 border border-primary/20 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Do Descarte à Nova Vida</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Cada placa eletrônica que processamos passa por um rigoroso processo de desmontagem, 
+                separação de materiais preciosos e transformação em matéria-prima para novos produtos. 
+                Desta forma, contribuímos para um ciclo sustentável de produção e consumo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <About />
       <Gallery />
       <Contact />
