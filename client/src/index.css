@@ -8,20 +8,20 @@
   --foreground: hsl(0, 0%, 98%);
   --card: hsl(0, 0%, 8%);
   --card-foreground: hsl(0, 0%, 95%);
-  --primary: hsl(142, 78%, 46%);
+  --primary: hsl(142, 66%, 28%);
   --primary-foreground: hsl(0, 0%, 0%);
   --secondary: hsl(0, 0%, 14%);
   --secondary-foreground: hsl(0, 0%, 98%);
   --muted: hsl(0, 0%, 14%);
   --muted-foreground: hsl(0, 0%, 63%);
-  --accent: hsl(142, 78%, 46%);
+  --accent: hsl(142, 66%, 28%);
   --accent-foreground: hsl(0, 0%, 0%);
-  --brazil-green: hsl(142, 78%, 46%);
+  --brazil-green: hsl(142, 66%, 28%);
   --brazil-yellow: hsl(51, 100%, 50%);
   --brazil-blue: hsl(220, 80%, 25%);
   --border: hsl(0, 0%, 20%);
   --input: hsl(0, 0%, 14%);
-  --ring: hsl(142, 78%, 46%);
+  --ring: hsl(142, 66%, 28%);
   --popover: hsl(0, 0%, 8%);
   --popover-foreground: hsl(0, 0%, 95%);
   --destructive: hsl(356, 90%, 54%);
@@ -89,12 +89,12 @@
 
 /* Typing Animation */
 .typing-text {
-  border-right: 2px solid hsl(142, 78%, 46%);
+  border-right: 2px solid hsl(142, 66%, 28%);
   animation: blink 1s infinite;
 }
 
 @keyframes blink {
-  0%, 50% { border-color: hsl(142, 78%, 46%); }
+  0%, 50% { border-color: hsl(142, 66%, 28%); }
   51%, 100% { border-color: transparent; }
 }
 

@@ -1,12 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import Hero from "@/components/sections/hero";
-import About from "@/components/sections/about";
-import Services from "@/components/sections/services";
-import Gallery from "@/components/sections/gallery";
-import Contact from "@/components/sections/contact";
-import Footer from "@/components/sections/footer";
 
 export default function Historia() {
   return (
@@ -91,24 +85,54 @@ export default function Historia() {
         </div>
       </section>
       
-      {/* Seções da página principal com background da imagem */}
-      <div className="relative">
+      {/* Seção adicional com background da imagem */}
+      <section className="relative py-20 bg-secondary/30">
         {/* Background com a imagem fornecida */}
         <div 
-          className="absolute inset-0 opacity-10 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 opacity-5 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(/attached_assets/Captura_de_tela_2025-09-05_074704-removebg-preview_1757069924825.png)`
           }}
         />
-        <div className="relative z-10">
-          <About />
-          <Services />
-          <Gallery />
-          <Contact />
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 gradient-text">Nosso Compromisso com o Futuro</h2>
+            <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                A MRX do Brasil continua inovando e expandindo suas operações para atender à crescente demanda 
+                por soluções sustentáveis de reciclagem eletrônica. Nossa visão é um Brasil onde 100% dos 
+                resíduos eletrônicos sejam reciclados de forma responsável.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">34+</div>
+                  <div className="text-muted-foreground">Anos de Experiência</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+                  <div className="text-muted-foreground">Empresas Atendidas</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                  <div className="text-muted-foreground">Reciclagem Responsável</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
       
-      <Footer />
+      {/* Footer simplificado */}
+      <footer className="bg-background border-t border-border py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-muted-foreground mb-4">
+            © 2024 MRX DO BRASIL - Mr do Brasil Sucatas Eletrônicas Ltda
+          </p>
+          <p className="text-sm text-muted-foreground">
+            CNPJ: 48.058.447/0001-48 | Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal, América - SP
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
