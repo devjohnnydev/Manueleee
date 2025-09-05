@@ -301,10 +301,15 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                       </div>
                     </div>
                     <div className="h-64 mb-4 rounded-lg overflow-hidden">
-                      <GoogleMap 
-                        center={{ lat: -23.5505, lng: -46.6333 }} 
-                        zoom={12} 
-                        className="w-full h-full"
+                      <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.962059318281!2d-46.3567889274912!3d-23.425737678893192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7d4f1614932f%3A0x56df137511cf47bb!2sEstr.%20Pedro%20da%20Cunha%20Albuquerque%20Lopes%2C%203153%2C%20Aruj%C3%A1%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1757071897380!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style={{border: 0}} 
+                        allowFullScreen 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="w-full h-full rounded-lg"
                       />
                     </div>
                     <div className="space-y-2">

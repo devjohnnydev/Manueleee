@@ -28,9 +28,9 @@ export default function GoogleMap({ center, zoom, className }: GoogleMapProps) {
               </svg>
             </div>
             <h3 class="text-xl font-bold text-foreground mb-2">MRX DO BRASIL</h3>
-            <p class="text-muted-foreground mb-4">CEP: 08584-030<br>São Paulo - SP</p>
+            <p class="text-muted-foreground mb-4">Estr. Pedro da Cunha Albuquerque Lopes, 3156<br>Perobal - América - SP</p>
             <a 
-              href="https://maps.google.com/?q=CEP+08584-030+São+Paulo+SP" 
+              href="https://maps.google.com/?q=Estr.+Pedro+da+Cunha+Albuquerque+Lopes+3156+Perobal+América+SP" 
               target="_blank" 
               rel="noopener noreferrer"
               class="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent transition-colors inline-flex items-center"
