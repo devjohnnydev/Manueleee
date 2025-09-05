@@ -6,20 +6,6 @@ import { Button } from "@/components/ui/button";
 export default function Services() {
   const services = [
     {
-      icon: Truck,
-      title: "Coleta Especializada",
-      description: "Coleta programada de equipamentos eletrônicos em sua empresa com toda segurança e rastreabilidade",
-      details: "Realizamos a coleta especializada de resíduos eletrônicos com otimização da cadeia de transporte. Nosso processo inclui agendamento flexível, equipe treinada e rastreabilidade completa desde a coleta até o destino final. Atendemos computadores, notebooks, celulares, impressoras, servidores e todos os tipos de equipamentos eletrônicos.",
-      stats: "1000+ empresas atendidas"
-    },
-    {
-      icon: Shield,
-      title: "Descaracterização Segura",
-      description: "Destruição completa de dados e descaracterização física de equipamentos com certificado",
-      details: "Utilizamos trituradores Shredder para garantir a destruição total de dados e a descaracterização física dos equipamentos. O processo inclui separação de telas e baterias, trituração em pequenos pedaços e certificação de destruição de dados. Fornecemos certificados de destruição para compliance.",
-      stats: "100% segurança de dados"
-    },
-    {
       icon: Recycle,
       title: "Reciclagem Sustentável",
       description: "Processo completo de reciclagem seguindo normas ambientais e certificações internacionais",
