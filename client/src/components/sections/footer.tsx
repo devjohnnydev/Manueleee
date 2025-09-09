@@ -148,7 +148,6 @@ export default function Footer() {
                 <span>© 2024 MRX DO BRASIL. Todos os direitos reservados.</span>
                 <div className="ml-4 flex items-center">
                   <span className="text-xs mr-2">Orgulhosamente brasileiro</span>
-                  <div className="w-8 h-6 brazil-flag rounded-sm border"></div>
                 </div>
               </div>
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
