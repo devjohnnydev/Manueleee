@@ -3,12 +3,9 @@ import wasteImage1 from "@assets/coleta-aparelhos-eletronicos-03_1756314694405.j
 import wasteImage2 from "@assets/coleta-aparelhos-eletronicos-04_1756314694405.jpg";
 import wasteImage3 from "@assets/coleta-destinacao-residuos-01_1756314694404.jpg";
 import wasteImage4 from "@assets/coleta-lixo-eletronico-bh-02_1756314694404.jpg";
-import newImage2 from "@assets/image_1756388259455.png";
-import newImage4 from "@assets/image_1756390321172.png";
 import certificacaoImage from "@assets/certificação_1757432623057.jpg";
 import qualidadeImage from "@assets/qualidade_1757432768660.jpg";
-import whatsappInstallation1 from "@assets/WhatsApp Image 2025-09-05 at 15.53.25_1757432881632.jpeg";
-import whatsappInstallation2 from "@assets/WhatsApp Image 2025-09-05 at 15.53.25_1757432895989.jpeg";
+import capaceteImage from "@assets/capacete_1757433380279.png";
 import whatsappImage from "@assets/WhatsApp Image 2025-09-04 at 15.48.32_1757069924826.jpeg";
 import captureImage from "@assets/Captura de tela 2025-08-27 133351_1756315169145.png";
 
@@ -20,7 +17,7 @@ export default function Gallery() {
       description: "Placas de circuito, processadores e componentes diversos coletados para reciclagem responsável"
     },
     {
-      image: whatsappInstallation1,
+      image: capaceteImage,
       title: "Instalações Modernas",
       description: "Equipamentos especializados para desmontagem e classificação de resíduos"
     },
