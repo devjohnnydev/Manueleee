@@ -58,7 +58,7 @@ export default function Navigation() {
             data-testid="header-logo"
           />
           <div>
-            <p className="text-sm text-muted-foreground">Reciclagem Sustentável desde 1990</p>
+            <p className="text-sm text-muted-foreground">Reciclagem Sustentável desde 2022</p>
           </div>
         </div>
         

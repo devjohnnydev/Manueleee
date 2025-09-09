@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto leading-relaxed">
-            Desde 1990, lideramos a <strong className="text-primary">logística reversa</strong> de equipamentos eletrônicos no Brasil. 
+            Desde 2022, lideramos a <strong className="text-primary">logística reversa</strong> de equipamentos eletrônicos no Brasil. 
             Fundada por Emanuel com a missão de <strong className="text-primary">preservar o planeta</strong> através da reciclagem responsável.
           </p>
           

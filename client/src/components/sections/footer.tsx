@@ -29,7 +29,7 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Desde 1990, lideramos a logística reversa de resíduos eletrônicos no Brasil. 
+                Desde 2022, lideramos a logística reversa de resíduos eletrônicos no Brasil. 
                 Fundada por Emanuel com a missão de preservar o planeta através da reciclagem responsável.
               </p>
               <div className="inline-flex items-center bg-card/50 backdrop-blur-sm border border-border rounded-full px-4 py-2 mb-6">

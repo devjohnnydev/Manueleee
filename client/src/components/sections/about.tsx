@@ -10,13 +10,13 @@ export default function About() {
             <div className="fade-in">
               <div className="inline-flex items-center bg-primary/20 rounded-full px-4 py-2 mb-6">
                 <History className="text-primary mr-2 h-4 w-4" />
-                <span className="text-sm font-medium">Desde 1990</span>
+                <span className="text-sm font-medium">Desde 2022</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Nossa <span className="gradient-text">História</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Desde <strong className="text-primary">1990</strong>, lideramos a logística reversa de equipamentos 
+                Desde <strong className="text-primary">2022</strong>, lideramos a logística reversa de equipamentos 
                 eletrônicos no Brasil. Fundada por <strong className="text-primary">Emanuel</strong> com a missão de 
                 preservar o planeta através da reciclagem responsável, construímos uma trajetória sólida baseada 
                 na <strong className="text-primary">sustentabilidade, inovação e compromisso</strong> com o meio ambiente 
