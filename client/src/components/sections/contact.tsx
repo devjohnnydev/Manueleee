@@ -300,26 +300,20 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                         <p className="text-muted-foreground">Nossa sede</p>
                       </div>
                     </div>
-                    <div className="h-64 mb-4 rounded-lg overflow-hidden">
-                      <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.962059318281!2d-46.3567889274912!3d-23.425737678893192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7d4f1614932f%3A0x56df137511cf47bb!2sEstr.%20Pedro%20da%20Cunha%20Albuquerque%20Lopes%2C%203153%2C%20Aruj%C3%A1%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1757071897380!5m2!1spt-BR!2sbr" 
-                        width="100%" 
-                        height="100%" 
-                        style={{border: 0}} 
-                        allowFullScreen 
-                        loading="lazy" 
-                        referrerPolicy="no-referrer-when-downgrade"
-                        className="w-full h-full rounded-lg"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <p className="text-lg font-semibold">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
-                      <p className="text-lg">América - São Paulo - SP</p>
-                      <div className="mt-4 text-sm text-muted-foreground">
-                        <p><strong>Razão Social:</strong> Mr do Brasil Sucatas Eletrônicas Ltda</p>
-                        <p><strong>Nome Fantasia:</strong> Mrx do Brasil</p>
-                        <p><strong>CNPJ:</strong> 48.058.447/0001-48</p>
+                    <div className="space-y-4">
+                      <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
+                        <p className="text-lg font-semibold mb-1">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
+                        <p className="text-lg text-muted-foreground">América - São Paulo - SP</p>
                       </div>
+                      <a 
+                        href="https://maps.google.com/?q=Estr.+Pedro+da+Cunha+Albuquerque+Lopes+3156+Perobal+América+SP" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent transition-colors inline-flex items-center justify-center w-full"
+                      >
+                        <MapPin className="mr-2 h-4 w-4" />
+                        Abrir no Google Maps
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -356,14 +350,25 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
             </div>
           </div>
         </div>
-        
-        {/* Mapa em largura total */}
-        <div className="mt-20">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold gradient-text mb-4">Nossa Localização</h3>
-            <p className="text-lg text-muted-foreground">Visite nossa sede em São Paulo</p>
+      </div>
+      
+      {/* Seção do Mapa em Largura Total */}
+      <div className="py-16 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-bold gradient-text mb-6">Nossa Localização</h3>
+            <p className="text-xl text-muted-foreground mb-4">Venha nos visitar em nossa sede</p>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-lg font-semibold mb-2">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
+              <p className="text-lg mb-4">América - São Paulo - SP</p>
+              <div className="text-sm text-muted-foreground">
+                <p><strong>Razão Social:</strong> Mr do Brasil Sucatas Eletrônicas Ltda</p>
+                <p><strong>Nome Fantasia:</strong> Mrx do Brasil</p>
+                <p><strong>CNPJ:</strong> 48.058.447/0001-48</p>
+              </div>
+            </div>
           </div>
-          <div className="w-full h-96">
+          <div className="w-full h-96 rounded-xl overflow-hidden shadow-2xl">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.962059318281!2d-46.3567889274912!3d-23.425737678893192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7d4f1614932f%3A0x56df137511cf47bb!2sEstr.%20Pedro%20da%20Cunha%20Albuquerque%20Lopes%2C%203153%2C%20Aruj%C3%A1%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1757071897380!5m2!1spt-BR!2sbr" 
               width="100%" 
@@ -376,6 +381,7 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
             />
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
