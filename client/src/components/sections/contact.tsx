@@ -382,7 +382,6 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
           </div>
         </div>
       </div>
-      </div>
     </section>
   );
 }
