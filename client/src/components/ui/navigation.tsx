@@ -40,8 +40,8 @@ export default function Navigation() {
     }
   };
 
-  const navigateToHistory = () => {
-    window.location.href = '/historia';
+  const navigateToPartners = () => {
+    window.location.href = '/parceiros';
     setIsMenuOpen(false);
   };
 
@@ -58,7 +58,7 @@ export default function Navigation() {
             data-testid="header-logo"
           />
           <div>
-            <p className="text-sm text-muted-foreground">Reciclagem Sustentável desde 1990</p>
+            <p className="text-sm text-muted-foreground">Reciclagem Sustentável desde 2019</p>
           </div>
         </div>
         
@@ -99,11 +99,11 @@ export default function Navigation() {
             Contato
           </button>
           <button 
-            onClick={navigateToHistory}
+            onClick={navigateToPartners}
             className="text-foreground hover:text-primary transition-colors"
-            data-testid="nav-historia"
+            data-testid="nav-parceiros"
           >
-            História
+            Parceiros
           </button>
         </div>
         
@@ -172,11 +172,11 @@ export default function Navigation() {
               Contato
             </button>
             <button 
-              onClick={navigateToHistory}
+              onClick={navigateToPartners}
               className="block w-full text-left text-foreground hover:text-primary transition-colors py-2"
-              data-testid="mobile-nav-historia"
+              data-testid="mobile-nav-parceiros"
             >
-              História
+              Parceiros
             </button>
           </div>
         </div>
