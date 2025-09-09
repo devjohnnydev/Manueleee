@@ -1,5 +1,6 @@
 import { History, Target, Eye, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import fachadadaImage from "@assets/Gemini_Generated_Image_83rhpv83rhpv83rh_1757429635032.png";
 
 export default function About() {
   return (
@@ -34,7 +35,7 @@ export default function About() {
           
           <div className="fade-in">
             <img 
-              src="/attached_assets/Gemini_Generated_Image_83rhpv83rhpv83rh_1757429635032.png" 
+              src={fachadadaImage} 
               alt="Fachada da MRX do Brasil - Nossa sede em operação" 
               className="rounded-2xl shadow-2xl w-full"
               data-testid="about-facility-image"
