@@ -16,7 +16,7 @@ export default function Services() {
       icon: Tag,
       title: "Certificação Completa",
       description: "Documentação completa para compliance ambiental da sua empresa",
-      details: "Fornecemos toda a documentação necessária para compliance ambiental, incluindo certificados de destinação, licenças ambientais, política de gestão e relatórios detalhados. Mais de 34 anos de experiência garantem credibilidade técnica e conformidade completa com órgãos reguladores.",
+      details: "Fornecemos toda a documentação necessária para compliance ambiental, incluindo certificados de destinação, licenças ambientais, política de gestão e relatórios detalhados. Nossa equipe especializada garante credibilidade técnica e conformidade completa com órgãos reguladores.",
       stats: "Certificações essenciais"
     },
     {
@@ -30,8 +30,8 @@ export default function Services() {
       icon: Headphones,
       title: "Suporte Especializado",
       description: "Equipe técnica especializada para orientações e suporte completo",
-      details: "Nossa equipe conta com mais de 34 anos de experiência em gerenciamento de resíduos eletrônicos. Oferecemos consultoria especializada, treinamentos, suporte técnico e acompanhamento de todo o processo. Tecnologia de ponta e processos otimizados garantem máxima eficiência e resultados superiores.",
-      stats: "34+ anos experiência"
+      details: "Nossa equipe especializada oferece consultoria, treinamentos, suporte técnico e acompanhamento completo de todo o processo. Com tecnologia de ponta e processos otimizados, garantimos máxima eficiência e resultados superiores desde nossa fundação.",
+      stats: "Suporte completo especializado"
     }
   ];
 

@@ -88,8 +88,8 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto">
             <div className="text-center fade-in" data-testid="stat-experience">
-              <div className="text-3xl font-bold text-primary mb-2">34+</div>
-              <div className="text-muted-foreground">Anos de Experiência</div>
+              <div className="text-3xl font-bold text-primary mb-2">3+</div>
+              <div className="text-muted-foreground">Anos no Mercado</div>
             </div>
             <div className="text-center fade-in" data-testid="stat-companies">
               <div className="text-3xl font-bold text-primary mb-2">1000+</div>

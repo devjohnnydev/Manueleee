@@ -82,8 +82,8 @@ export default function About() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
                 <Card className="bg-card/50 backdrop-blur-sm border-border">
                   <CardContent className="p-6 text-center">
-                    <div className="text-2xl font-bold text-primary mb-2" data-testid="stat-years">34+</div>
-                    <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+                    <div className="text-2xl font-bold text-primary mb-2" data-testid="stat-years">3+</div>
+                    <div className="text-sm text-muted-foreground">Anos no Mercado</div>
                   </CardContent>
                 </Card>
                 <Card className="bg-card/50 backdrop-blur-sm border-border">

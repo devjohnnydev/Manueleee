@@ -153,7 +153,7 @@ export default function Footer() {
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                 <span>Fundada em 1990 por Emanuel</span>
                 <span>•</span>
-                <span>34+ anos de experiência</span>
+                <span>3+ anos transformando resíduos eletrônicos</span>
                 <span>•</span>
                 <span>Reciclagem 100% sustentável</span>
               </div>
