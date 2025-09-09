@@ -19,9 +19,9 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src={brasilFlag} 
-                  alt="Bandeira do Brasil" 
-                  className="h-8 w-12 object-cover rounded"
+                  src={getAssetUrl("logo_1756386223432.png")} 
+                  alt="MRX DO BRASIL" 
+                  className="h-12 w-auto"
                   data-testid="footer-logo"
                 />
                 <div>
@@ -152,9 +152,16 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                <span>Fundada em 1990 por Emanuel</span>
+                <div className="flex items-center">
+                  <img 
+                    src={brasilFlag} 
+                    alt="Bandeira do Brasil" 
+                    className="h-5 w-8 object-cover rounded mr-2"
+                  />
+                  <span>Fundada em 2019</span>
+                </div>
                 <span>•</span>
-                <span>3+ anos transformando resíduos eletrônicos</span>
+                <span>2+ anos transformando resíduos eletrônicos</span>
                 <span>•</span>
                 <span>Reciclagem 100% sustentável</span>
               </div>
