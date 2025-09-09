@@ -297,22 +297,20 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                       </div>
                       <div>
                         <h3 className="text-xl font-bold">Localização</h3>
-                        <p className="text-muted-foreground">Localização</p>
+                        <p className="text-muted-foreground">Endereço completo</p>
                       </div>
                     </div>
-                    <div className="space-y-4">
-                      <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
-                        <p className="text-lg font-semibold mb-1">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
-                        <p className="text-lg text-muted-foreground">América - São Paulo - SP</p>
-                      </div>
+                    <div className="space-y-3">
+                      <p className="text-sm text-muted-foreground mb-2">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
+                      <p className="text-sm text-muted-foreground mb-4">América - São Paulo - SP</p>
                       <a 
                         href="https://maps.google.com/?q=Estr.+Pedro+da+Cunha+Albuquerque+Lopes+3156+Perobal+América+SP" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent transition-colors inline-flex items-center justify-center w-full"
+                        className="bg-secondary border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-card transition-colors inline-flex items-center justify-center"
                       >
                         <MapPin className="mr-2 h-4 w-4" />
-                        Abrir no Google Maps
+                        Ver no Mapa
                       </a>
                     </div>
                   </CardContent>
