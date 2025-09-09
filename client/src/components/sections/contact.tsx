@@ -276,9 +276,9 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                         <p className="text-muted-foreground">Suporte por email</p>
                       </div>
                     </div>
-                    <p className="text-lg mb-4">mrxdobrasil@hotmail.com</p>
+                    <p className="text-lg mb-4">comercial@mrxdobrasi.com</p>
                     <a 
-                      href="mailto:mrxdobrasil@hotmail.com" 
+                      href="mailto:comercial@mrxdobrasi.com" 
                       className="bg-secondary border border-border text-foreground px-6 py-3 rounded-lg font-semibold ripple hover:bg-card transition-colors inline-flex items-center"
                       data-testid="contact-email-button"
                     >
@@ -297,7 +297,7 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                       </div>
                       <div>
                         <h3 className="text-xl font-bold">Localização</h3>
-                        <p className="text-muted-foreground">Nossa sede</p>
+                        <p className="text-muted-foreground">Localização</p>
                       </div>
                     </div>
                     <div className="space-y-4">
@@ -357,7 +357,7 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold gradient-text mb-6">Nossa Localização</h3>
-            <p className="text-xl text-muted-foreground mb-4">Venha nos visitar em nossa sede</p>
+            <p className="text-xl text-muted-foreground mb-4">Encontre-nos facilmente</p>
             <div className="max-w-2xl mx-auto">
               <p className="text-lg font-semibold mb-2">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
               <p className="text-lg mb-4">América - São Paulo - SP</p>

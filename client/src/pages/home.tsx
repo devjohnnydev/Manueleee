@@ -155,7 +155,7 @@ export default function Home() {
                   Falar com Área Comercial
                 </a>
                 <a 
-                  href="mailto:mrxdobrasil@hotmail.com?subject=Proposta Comercial - Venda de Resíduos Eletrônicos" 
+                  href="mailto:comercial@mrxdobrasi.com?subject=Proposta Comercial - Venda de Resíduos Eletrônicos" 
                   className="bg-secondary border border-border text-foreground px-8 py-4 rounded-lg font-semibold ripple hover:bg-card transition-colors inline-flex items-center justify-center"
                   data-testid="commercial-email-button"
                 >

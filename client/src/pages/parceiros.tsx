@@ -158,7 +158,7 @@ export default function Parceiros() {
                   Falar sobre Parceria
                 </a>
                 <a 
-                  href="mailto:mrxdobrasil@hotmail.com?subject=Proposta de Parceria" 
+                  href="mailto:comercial@mrxdobrasi.com?subject=Proposta de Parceria" 
                   className="bg-secondary border border-border text-foreground px-8 py-4 rounded-lg font-semibold hover:bg-card transition-colors inline-flex items-center justify-center"
                 >
                   Enviar Email
