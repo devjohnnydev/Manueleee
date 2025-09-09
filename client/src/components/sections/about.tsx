@@ -33,14 +33,14 @@ export default function About() {
               </p>
               
               {/* Mission, Vision, Values */}
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <Card className="bg-card/50 backdrop-blur-sm border-border">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-primary flex items-center">
-                      <Target className="mr-3 h-5 w-5" />
+                    <h3 className="text-lg font-bold mb-3 text-primary flex items-center">
+                      <Target className="mr-2 h-4 w-4" />
                       Missão
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       Promover a sustentabilidade, oferecendo um atendimento humano e justo, 
                       e manter-se como parceira confiável em todas as relações de negócio, 
                       transformando desafios em oportunidades e construindo um futuro melhor para todos.
@@ -50,11 +50,11 @@ export default function About() {
                 
                 <Card className="bg-card/50 backdrop-blur-sm border-border">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-primary flex items-center">
-                      <Eye className="mr-3 h-5 w-5" />
+                    <h3 className="text-lg font-bold mb-3 text-primary flex items-center">
+                      <Eye className="mr-2 h-4 w-4" />
                       Visão
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       "Transformar o setor de reciclagem em um exemplo de sustentabilidade e 
                       responsabilidade, construindo um futuro mais consciente para as próximas gerações."
                     </p>
@@ -63,16 +63,16 @@ export default function About() {
                 
                 <Card className="bg-card/50 backdrop-blur-sm border-border">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-primary flex items-center">
-                      <Heart className="mr-3 h-5 w-5" />
+                    <h3 className="text-lg font-bold mb-3 text-primary flex items-center">
+                      <Heart className="mr-2 h-4 w-4" />
                       Valores
                     </h3>
-                    <div className="text-muted-foreground">
-                      <p className="mb-2"><strong>Transparência:</strong> atuar com clareza em todas as relações</p>
-                      <p className="mb-2"><strong>Credibilidade:</strong> construir confiança com clientes, fornecedores e parceiros</p>
-                      <p className="mb-2"><strong>Respeito:</strong> valorizar pessoas, relações e o meio ambiente</p>
-                      <p className="mb-2"><strong>Sustentabilidade:</strong> promover práticas que gerem impacto positivo</p>
-                      <p><strong>Empatia:</strong> compreender e agir com humanidade em todas as situações</p>
+                    <div className="text-sm text-muted-foreground">
+                      <p className="mb-1"><strong>Transparência:</strong> atuar com clareza</p>
+                      <p className="mb-1"><strong>Credibilidade:</strong> construir confiança</p>
+                      <p className="mb-1"><strong>Respeito:</strong> valorizar pessoas e ambiente</p>
+                      <p className="mb-1"><strong>Sustentabilidade:</strong> impacto positivo</p>
+                      <p><strong>Empatia:</strong> agir com humanidade</p>
                     </div>
                   </CardContent>
                 </Card>
