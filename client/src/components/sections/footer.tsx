@@ -1,5 +1,6 @@
 import { Mail, MapPin } from "lucide-react";
 import { getAssetUrl } from "@/lib/config";
+import brasilFlag from "@assets/Brasil_1757431889838.png";
 
 export default function Footer() {
   const services = [
@@ -18,9 +19,9 @@ export default function Footer() {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src={getAssetUrl("logo_1756386223432.png")} 
-                  alt="MRX DO BRASIL" 
-                  className="h-12 w-auto"
+                  src={brasilFlag} 
+                  alt="Bandeira do Brasil" 
+                  className="h-8 w-12 object-cover rounded"
                   data-testid="footer-logo"
                 />
                 <div>
