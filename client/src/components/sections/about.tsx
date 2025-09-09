@@ -30,52 +30,6 @@ export default function About() {
               ainda mais seu compromisso em <strong className="text-primary">transformar desafios em oportunidades</strong> e construir 
               um futuro melhor para todos.
             </p>
-            
-            {/* Mission, Vision, Values */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <Card className="bg-card/50 backdrop-blur-sm border-border">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-3 text-primary flex items-center">
-                    <Target className="mr-2 h-4 w-4" />
-                    Missão
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Promover a sustentabilidade, oferecendo um atendimento humano e justo, 
-                    e manter-se como parceira confiável em todas as relações de negócio, 
-                    transformando desafios em oportunidades e construindo um futuro melhor para todos.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card/50 backdrop-blur-sm border-border">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-3 text-primary flex items-center">
-                    <Eye className="mr-2 h-4 w-4" />
-                    Visão
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    "Transformar o setor de reciclagem em um exemplo de sustentabilidade e 
-                    responsabilidade, construindo um futuro mais consciente para as próximas gerações."
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card/50 backdrop-blur-sm border-border">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-3 text-primary flex items-center">
-                    <Heart className="mr-2 h-4 w-4" />
-                    Valores
-                  </h3>
-                  <div className="text-sm text-muted-foreground">
-                    <p className="mb-1"><strong>Transparência:</strong> atuar com clareza</p>
-                    <p className="mb-1"><strong>Credibilidade:</strong> construir confiança</p>
-                    <p className="mb-1"><strong>Respeito:</strong> valorizar pessoas e ambiente</p>
-                    <p className="mb-1"><strong>Sustentabilidade:</strong> impacto positivo</p>
-                    <p><strong>Empatia:</strong> agir com humanidade</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </div>
           
           <div className="fade-in">
@@ -114,6 +68,54 @@ export default function About() {
               </Card>
             </div>
           </div>
+        </div>
+      </div>
+      
+      {/* Mission, Vision, Values - Full Width Section */}
+      <div className="w-full px-6 lg:px-12 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card className="bg-card/50 backdrop-blur-sm border-border">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-4 text-primary flex items-center">
+                <Target className="mr-3 h-6 w-6" />
+                Missão
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Promover a sustentabilidade, oferecendo um atendimento humano e justo, 
+                e manter-se como parceira confiável em todas as relações de negócio, 
+                transformando desafios em oportunidades e construindo um futuro melhor para todos.
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-card/50 backdrop-blur-sm border-border">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-4 text-primary flex items-center">
+                <Eye className="mr-3 h-6 w-6" />
+                Visão
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                "Transformar o setor de reciclagem em um exemplo de sustentabilidade e 
+                responsabilidade, construindo um futuro mais consciente para as próximas gerações."
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-card/50 backdrop-blur-sm border-border">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-4 text-primary flex items-center">
+                <Heart className="mr-3 h-6 w-6" />
+                Valores
+              </h3>
+              <div className="text-base text-muted-foreground leading-relaxed">
+                <p className="mb-2"><strong>Transparência:</strong> atuar com clareza em todas as relações</p>
+                <p className="mb-2"><strong>Credibilidade:</strong> construir confiança com clientes, fornecedores e parceiros</p>
+                <p className="mb-2"><strong>Respeito:</strong> valorizar pessoas, relações e o meio ambiente</p>
+                <p className="mb-2"><strong>Sustentabilidade:</strong> promover práticas que gerem impacto positivo</p>
+                <p><strong>Empatia:</strong> compreender e agir com humanidade em todas as situações</p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
