@@ -3,6 +3,12 @@ import wasteImage1 from "@assets/coleta-aparelhos-eletronicos-03_1756314694405.j
 import wasteImage2 from "@assets/coleta-aparelhos-eletronicos-04_1756314694405.jpg";
 import wasteImage3 from "@assets/coleta-destinacao-residuos-01_1756314694404.jpg";
 import wasteImage4 from "@assets/coleta-lixo-eletronico-bh-02_1756314694404.jpg";
+import newImage1 from "@assets/image_1756387758678.png";
+import newImage2 from "@assets/image_1756388259455.png";
+import newImage3 from "@assets/image_1756389261244.png";
+import newImage4 from "@assets/image_1756390321172.png";
+import whatsappImage from "@assets/WhatsApp Image 2025-09-04 at 15.48.32_1757069924826.jpeg";
+import captureImage from "@assets/Captura de tela 2025-08-27 133351_1756315169145.png";
 
 export default function Gallery() {
   const galleryItems = [
@@ -12,14 +18,14 @@ export default function Gallery() {
       description: "Placas de circuito, processadores e componentes diversos coletados para reciclagem responsável"
     },
     {
-      image: "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      title: "Facility de Reciclagem",
-      description: "Instalações modernas equipadas com tecnologia de ponta para processamento seguro"
+      image: newImage1,
+      title: "Processamento Avançado",
+      description: "Tecnologia de ponta para separação e processamento de materiais eletrônicos"
     },
     {
-      image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      title: "Coleta Especializada",
-      description: "Frota especializada para coleta segura e transporte adequado dos resíduos eletrônicos"
+      image: newImage2,
+      title: "Instalações Modernas",
+      description: "Equipamentos especializados para desmontagem e classificação de resíduos"
     },
     {
       image: wasteImage2,
@@ -27,14 +33,29 @@ export default function Gallery() {
       description: "Equipe especializada com equipamentos de proteção para manuseio seguro dos materiais"
     },
     {
+      image: newImage3,
+      title: "Recuperação de Materiais",
+      description: "Processo otimizado para extração de metais preciosos e materiais recicláveis"
+    },
+    {
       image: wasteImage3,
       title: "Separação de Materiais",
       description: "Processo minucioso de separação e classificação de diferentes tipos de materiais"
     },
     {
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      image: newImage4,
+      title: "Controle de Qualidade",
+      description: "Rigoroso controle de qualidade em todas as etapas do processo de reciclagem"
+    },
+    {
+      image: whatsappImage,
+      title: "Operações Diárias",
+      description: "Nossas operações contínuas garantindo processamento eficiente dos resíduos"
+    },
+    {
+      image: captureImage,
       title: "Certificação Total",
-      description: "Documentação completa e certificações internacionais para garantir conformidade"
+      description: "Documentação completa e certificações para garantir conformidade ambiental"
     }
   ];
 
@@ -48,7 +69,7 @@ export default function Gallery() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {galleryItems.map((item, index) => (
             <div key={index} className="fade-in">
               <Card className="bg-card border-border overflow-hidden gallery-item" data-testid={`gallery-item-${index}`}>
