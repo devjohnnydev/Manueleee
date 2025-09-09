@@ -288,34 +288,6 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                   </CardContent>
                 </Card>
                 
-                {/* Location & Map */}
-                <Card className="bg-card border-border">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
-                        <MapPin className="h-8 w-8 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold">Localização</h3>
-                        <p className="text-muted-foreground">Endereço completo</p>
-                      </div>
-                    </div>
-                    <div className="space-y-3">
-                      <p className="text-sm text-muted-foreground mb-2">Estr. Pedro da Cunha Albuquerque Lopes, 3156 - Perobal</p>
-                      <p className="text-sm text-muted-foreground mb-4">América - São Paulo - SP</p>
-                      <a 
-                        href="https://maps.google.com/?q=Estr.+Pedro+da+Cunha+Albuquerque+Lopes+3156+Perobal+América+SP" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="bg-secondary border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-card transition-colors inline-flex items-center justify-center"
-                      >
-                        <MapPin className="mr-2 h-4 w-4" />
-                        Ver no Mapa
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-                
                 {/* Working Hours */}
                 <Card className="bg-card border-border">
                   <CardContent className="p-8">
