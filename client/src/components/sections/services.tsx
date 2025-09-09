@@ -16,7 +16,7 @@ export default function Services() {
       icon: Tag,
       title: "Certificação Completa",
       description: "Documentação completa para compliance ambiental da sua empresa",
-      details: "Fornecemos toda a documentação necessária para compliance ambiental, incluindo certificados de destinação, licenças ambientais, política de gestão e relatórios detalhados. Mais de 10 anos de experiência garantem credibilidade técnica e conform completa com órgãos reguladores.",
+      details: "Fornecemos toda a documentação necessária para compliance ambiental, incluindo certificados de destinação, licenças ambientais, política de gestão e relatórios detalhados. Mais de 34 anos de experiência garantem credibilidade técnica e conformidade completa com órgãos reguladores.",
       stats: "Certificações essenciais"
     },
     {
@@ -45,7 +45,7 @@ export default function Services() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <div key={index} className="fade-in">
               <Card className="bg-card border-border card-hover h-full" data-testid={`service-card-${index}`}>
