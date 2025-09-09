@@ -3,10 +3,12 @@ import wasteImage1 from "@assets/coleta-aparelhos-eletronicos-03_1756314694405.j
 import wasteImage2 from "@assets/coleta-aparelhos-eletronicos-04_1756314694405.jpg";
 import wasteImage3 from "@assets/coleta-destinacao-residuos-01_1756314694404.jpg";
 import wasteImage4 from "@assets/coleta-lixo-eletronico-bh-02_1756314694404.jpg";
-import newImage1 from "@assets/image_1756387758678.png";
 import newImage2 from "@assets/image_1756388259455.png";
-import newImage3 from "@assets/image_1756389261244.png";
 import newImage4 from "@assets/image_1756390321172.png";
+import certificacaoImage from "@assets/certificação_1757432623057.jpg";
+import qualidadeImage from "@assets/qualidade_1757432768660.jpg";
+import whatsappInstallation1 from "@assets/WhatsApp Image 2025-09-05 at 15.53.25_1757432881632.jpeg";
+import whatsappInstallation2 from "@assets/WhatsApp Image 2025-09-05 at 15.53.25_1757432895989.jpeg";
 import whatsappImage from "@assets/WhatsApp Image 2025-09-04 at 15.48.32_1757069924826.jpeg";
 import captureImage from "@assets/Captura de tela 2025-08-27 133351_1756315169145.png";
 
@@ -18,12 +20,7 @@ export default function Gallery() {
       description: "Placas de circuito, processadores e componentes diversos coletados para reciclagem responsável"
     },
     {
-      image: newImage1,
-      title: "Processamento Avançado",
-      description: "Tecnologia de ponta para separação e processamento de materiais eletrônicos"
-    },
-    {
-      image: newImage2,
+      image: whatsappInstallation1,
       title: "Instalações Modernas",
       description: "Equipamentos especializados para desmontagem e classificação de resíduos"
     },
@@ -33,17 +30,12 @@ export default function Gallery() {
       description: "Equipe especializada com equipamentos de proteção para manuseio seguro dos materiais"
     },
     {
-      image: newImage3,
-      title: "Recuperação de Materiais",
-      description: "Processo otimizado para extração de metais preciosos e materiais recicláveis"
-    },
-    {
       image: wasteImage3,
       title: "Separação de Materiais",
       description: "Processo minucioso de separação e classificação de diferentes tipos de materiais"
     },
     {
-      image: newImage4,
+      image: qualidadeImage,
       title: "Controle de Qualidade",
       description: "Rigoroso controle de qualidade em todas as etapas do processo de reciclagem"
     },
@@ -53,7 +45,7 @@ export default function Gallery() {
       description: "Nossas operações contínuas garantindo processamento eficiente dos resíduos"
     },
     {
-      image: captureImage,
+      image: certificacaoImage,
       title: "Certificação Total",
       description: "Documentação completa e certificações para garantir conformidade ambiental"
     }
