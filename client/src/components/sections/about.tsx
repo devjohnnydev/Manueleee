@@ -10,25 +10,17 @@ export default function About() {
             <div className="fade-in">
               <div className="inline-flex items-center bg-primary/20 rounded-full px-4 py-2 mb-6">
                 <History className="text-primary mr-2 h-4 w-4" />
-                <span className="text-sm font-medium">Desde 2019</span>
+                <span className="text-sm font-medium">Desde 1990</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Nossa <span className="gradient-text">História</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Um sonho nasceu em <strong className="text-primary">novembro de 2019</strong>: construir uma empresa 
-                que unisse inovação, responsabilidade e compromisso com a sustentabilidade. Desde o início, 
-                a visão foi clara — transformar resíduos em valor, cuidando do meio ambiente.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Com dedicação e aprendizado, esse sonho tomou forma e, em <strong className="text-primary">23 de setembro de 2022</strong>, 
-                nasceu oficialmente a MRX do Brasil, estruturada sobre princípios sólidos de responsabilidade 
-                ambiental, valorização de parceiros e compromisso com a transparência e eficiência.
-              </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Ao decorrer do tempo, ouvindo a necessidade do mercado e o aumento da demanda, um parceiro 
-                com o mesmo sonho e propósito passou a fazer parte dessa história, fortalecendo ainda mais 
-                nosso compromisso em <strong className="text-primary">transformar desafios em oportunidades</strong>.
+                Desde <strong className="text-primary">1990</strong>, lideramos a logística reversa de equipamentos 
+                eletrônicos no Brasil. Fundada por <strong className="text-primary">Emanuel</strong> com a missão de 
+                preservar o planeta através da reciclagem responsável, construímos uma trajetória sólida baseada 
+                na <strong className="text-primary">sustentabilidade, inovação e compromisso</strong> com o meio ambiente 
+                e a sociedade.
               </p>
               
               {/* Mission, Vision, Values */}
@@ -87,7 +79,7 @@ export default function About() {
               />
               
               {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
                 <Card className="bg-card/50 backdrop-blur-sm border-border">
                   <CardContent className="p-6 text-center">
                     <div className="text-2xl font-bold text-primary mb-2" data-testid="stat-years">34+</div>
