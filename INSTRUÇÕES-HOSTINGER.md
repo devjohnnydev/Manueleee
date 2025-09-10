@@ -1,14 +1,22 @@
-# Instruções para Publicar na Hostinger
+# ✅ VERSÃO CORRIGIDA - Instruções para Publicar na Hostinger
+
+## 🚨 IMPORTANTE: Use a nova versão estática!
+
+⚠️ **NÃO use mais a pasta `dist/public/`** - a Hostinger detectou como projeto React/Node.js
+
+✅ **USE AGORA: pasta `hostinger-static/`** - versão HTML pura e compatível
 
 ## 📁 Arquivos para Upload
 
-Faça upload de **TODOS** os arquivos da pasta `dist/public/` para a pasta `public_html` da sua Hostinger:
+Faça upload de **TODOS** os arquivos da pasta `hostinger-static/` para a pasta `public_html` da sua Hostinger:
 
-### Estrutura que deve ficar na Hostinger:
+### ✅ Estrutura CORRETA que deve ficar na Hostinger:
 ```
 public_html/
-├── index.html
-└── assets/
+├── index.html          (← Página principal HTML puro)
+├── parceiros.html      (← Página de parceiros HTML puro)  
+├── .htaccess          (← Configurações do servidor)
+└── assets/            (← Pasta com imagens e CSS)
     ├── Brasil_1757431889838-DrVR2N5i.png
     ├── capacete_1757433380279-_1oq9Di1.png
     ├── certificação_1757432623057-057DWKi5.jpg
@@ -21,6 +29,14 @@ public_html/
     ├── qualidade_1757432768660-DmyoSdcn.jpg
     └── WhatsApp Image 2025-09-04 at 15.48.32_1757069924826-D5q80Eck.jpeg
 ```
+
+## 🔧 O que foi mudado:
+- ✅ **HTML puro** - sem React/Node.js
+- ✅ **Navegação funcional** - links entre páginas
+- ✅ **WhatsApp integrado** - botões funcionando
+- ✅ **Design responsivo** - funciona em mobile
+- ✅ **Otimizado** - carregamento rápido
+- ✅ **Compatível** - funciona na Hostinger compartilhada
 
 ## 🚀 Passo a Passo
 
