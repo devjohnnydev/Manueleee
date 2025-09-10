@@ -28,6 +28,13 @@ export default function Hero() {
     }
   };
 
+  const scrollToHistory = () => {
+    const element = document.getElementById('sobre');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center hex-pattern overflow-hidden pt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-background/90 to-background/70"></div>
@@ -64,13 +71,14 @@ export default function Hero() {
               <Recycle className="mr-3 h-5 w-5" />
               Nossos Serviços
             </Button>
-            <a 
-              href="/historia"
+            <button 
+              onClick={scrollToHistory}
               className="bg-secondary border border-border text-foreground px-8 py-4 rounded-lg font-semibold text-lg ripple hover:bg-card transition-colors inline-flex items-center justify-center"
+              data-testid="hero-history-button"
             >
               <BookOpen className="mr-3 h-5 w-5 text-primary" />
               Nossa História
-            </a>
+            </button>
             <a 
               href="https://wa.me/5511940326215" 
               target="_blank" 
