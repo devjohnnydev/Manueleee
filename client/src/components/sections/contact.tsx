@@ -276,9 +276,9 @@ Aguardo contato para agendamento da coleta. Obrigado!`;
                         <p className="text-muted-foreground">Suporte por email</p>
                       </div>
                     </div>
-                    <p className="text-lg mb-4">comercial@mrxdobrasi.com</p>
+                    <p className="text-lg mb-4">comercial@mrxdobrasil.com</p>
                     <a 
-                      href="mailto:comercial@mrxdobrasi.com" 
+                      href="mailto:comercial@mrxdobrasil.com" 
                       className="bg-secondary border border-border text-foreground px-6 py-3 rounded-lg font-semibold ripple hover:bg-card transition-colors inline-flex items-center"
                       data-testid="contact-email-button"
                     >

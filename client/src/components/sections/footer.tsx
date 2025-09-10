@@ -49,7 +49,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a 
-                  href="mailto:comercial@mrxdobrasi.com" 
+                  href="mailto:comercial@mrxdobrasil.com" 
                   className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   data-testid="footer-email"
                 >
@@ -127,7 +127,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 mr-3 text-primary flex-shrink-0" />
-                  <span className="break-all">comercial@mrxdobrasi.com</span>
+                  <span className="break-all">comercial@mrxdobrasil.com</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-3 text-primary flex-shrink-0" />

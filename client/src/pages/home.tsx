@@ -99,8 +99,8 @@ export default function Home() {
                 ampliar nossa capacidade de processamento.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Se você possui resíduos eletrônicos em quantidade, entre em contato com nossa 
-                área comercial para negociarção. Oferecemos preços competitivos e coleta especializada.
+                Se você possui resíduos eletrônicos em <span className="text-primary font-bold">qualquer quantidade</span>, entre em contato com nossa 
+                área comercial para negociação. Oferecemos preços competitivos e coleta especializada.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -155,7 +155,7 @@ export default function Home() {
                   Falar com Área Comercial
                 </a>
                 <a 
-                  href="mailto:comercial@mrxdobrasi.com?subject=Proposta Comercial - Venda de Resíduos Eletrônicos" 
+                  href="mailto:comercial@mrxdobrasil.com?subject=Proposta Comercial - Venda de Resíduos Eletrônicos" 
                   className="bg-secondary border border-border text-foreground px-8 py-4 rounded-lg font-semibold ripple hover:bg-card transition-colors inline-flex items-center justify-center"
                   data-testid="commercial-email-button"
                 >
