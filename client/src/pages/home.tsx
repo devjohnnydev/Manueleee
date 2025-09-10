@@ -94,7 +94,7 @@ export default function Home() {
             </h2>
             <div className="bg-card/80 backdrop-blur-sm border border-border rounded-xl p-8 mb-8">
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-                A MRX do Brasil e uma empresa conceituada no mercado de resíduos eletrônicos <strong className="text-primary">compradora</strong> de resíduos eletrônicos. 
+                A MRX do Brasil e uma empresa conceituada no mercado <strong className="text-primary">compradora de resíduos eletrônicos</strong>. 
                 Nossa área comercial está sempre em busca de novos fornecedores e parcerias para 
                 ampliar nossa capacidade de processamento.
               </p>
